@@ -1,0 +1,1256 @@
+
+/*header section*/
+
+
+header {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 20px 40px;
+    align-items: center;    
+    border-bottom: 1px solid #ccc;
+    background-color:#2c3e50;
+     
+}
+h1 {
+    margin: 0;
+    padding-top: 0%;
+    font-size: 24px;
+    color: white;
+    margin-left: 35px;
+    margin-bottom: 35px; 
+  }
+nav {
+    display: flex;
+    gap: 25px; 
+    align-items: center;
+}
+nav a {
+    gap: 8px; /* Space between icon and text */
+    align-items: center;
+    text-decoration: none;
+    color: white;
+
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin-right: 35px;
+    margin-bottom: 35px; 
+    display: flex;
+
+}
+nav img {
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+.Skills {
+    text-decoration: solid;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+
+}
+.Skills-Content{
+    display: flex;
+    justify-content: center; 
+   /*adding: 20px;*/
+   padding: 40px 60px;
+   /*Flex items will wrap onto multiple lines if necessary*/
+   flex-wrap: wrap; /* Helps on smaller screens */
+   gap: 120px;
+}
+.skill-box {
+  /*concise way to tell a flex item to grow and take up available space equally*/
+    flex: 1;
+    max-width: 700px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+.skill-box h2 {
+    /*padding-left: 165px;*/
+    font-size: 32px;
+    margin-bottom: 20px;
+
+
+}
+.skill-box img {
+   /* max-width: 300%;*/
+   /*border-radius: 10px;*/
+   width: 100%;
+   max-width: 5oopx ;
+   height: 250px;   
+   /*This ensures that the entire container is filled, but parts of the content may be cut off.*/
+   object-fit: cover;  
+   border-radius: 10px;
+   margin-bottom: 20px;
+   /* typically take up the full width available to them,*/
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+
+
+}
+.skill-box p{
+   /*font-family: 'Times New Roman', Times, serif;*/
+   /*font-size: 18px;*/
+   /*height: auto;*/
+   font-size: 18px;
+   max-width: 750px;
+   line-height: 1.6;
+   padding: 0 10px;
+   text-align: center;
+}
+
+.skill-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: #007bff; 
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 8px;
+  }
+  
+  .skill-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /*  grow effect */
+  }
+  
+
+
+/*New section for university*/
+
+
+.Education{
+    text-decoration: solid;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+}
+.university-content{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: left;
+}
+.edu-logo img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+
+  }
+  .edu-details {
+    max-width: 600px;
+    font-size: 28px;
+  }
+  .edu-details h3 {
+    font-size: 28px;
+    margin-bottom: 60px;
+  }
+
+
+  /*new section of 6 courses*/
+
+
+  .Courses{
+    text-decoration: solid;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+  }
+  .Courses-Content{
+    display: flex;
+    justify-content: center;
+
+  }
+  .IT-Skills{
+   width: 350px; 
+   height: 400px; 
+   padding: 100px; 
+   border: 2px solid black;
+   margin: 10px; 
+   /*background-color: lightblue; /* Background color */
+  border-radius: 25px;
+  border: 2px solid #0e0e0e;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Light shadow */
+
+
+  }
+  .IT-Skills h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+  }
+  .IT-Skills p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: justify;
+
+  }
+  .IT-Skills img {
+    align-items: auto;
+    padding-left: auto;
+    height: 125px;
+    transition: opacity 0.3s ease; /*I will swap*/
+
+  }
+  .IT-Skills:hover{
+   
+      transform: scale(1.05); /*  enlarge */
+      background-image: url("rdr2inhtml2.jpg");
+      border: 2px solid #ffcc00; /* Change to a soft yellow border */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Subtle larger shadow */
+      color: #ccc;
+  }
+  .IT-Skills:hover img{
+    content: url('https://img.icons8.com/?size=100&id=DgGnQkdkIcqi&format=png&color=000000'); /* Change to a new image */
+
+  }
+  .cybersecurity{
+    width: 350px; 
+    height: 400px; 
+    padding: 100px; 
+    border: 2px solid black; 
+    margin: 70px; 
+    /*background-color: lightblue; /* Background color */
+   border-radius: 25px;
+   border: 2px solid #0e0e0e;
+   background-color: #f9f9f9;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Light shadow */
+ 
+   }
+   .cybersecurity h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+  }
+  .cybersecurity p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: justify;
+
+
+  }
+  .cybersecurity img{
+    align-items: auto;
+    padding-left: auto;
+    height: 125px;
+    transition: opacity 0.3s ease; /*I will swap*/
+
+  }
+  .cybersecurity:hover{
+   
+    transform: scale(1.05); /* Slightly enlarge the box */
+    background-image: url("rdr2inhtml4.jpg");
+    border: 2px solid #ffcc00; /* Change to a soft yellow border */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Subtle larger shadow */
+    color: #df0c0c;
+}
+.cybersecurity:hover img{
+  content: url('https://img.icons8.com/?size=100&id=pXbJmmqmsmIY&format=png&color=000000'); /* Change to a new image */
+}
+.System-analysis{
+  width: 350px;
+    height: 400px; 
+    padding: 100px; 
+    border: 2px solid black; 
+    margin: 10px; /* Space between the box and other elements */
+    /*background-color: lightblue; /* Background color */
+   border-radius: 25px;
+   border: 2px solid #0e0e0e;
+   background-color: #f9f9f9;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Light shadow */
+ 
+}
+.System-analysis h6 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+.System-analysis p {
+  font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: justify;
+padding-bottom: 0;
+
+}
+.System-analysis img {
+  align-items: auto;
+  padding-left: auto;
+  height: 125px;
+  transition: opacity 0.3s ease; /*I will swap*/
+}
+.System-analysis:hover {
+  transform: scale(1.05); /* Slightly enlarge the box */
+    background-image: url("rdr2inhtml3.jpg");
+    border: 2px solid #ffcc00; /* Change to a soft yellow border */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Subtle larger shadow */
+    color: #ccc;
+}
+.System-analysis:hover img{
+  content: url('https://img.icons8.com/?size=100&id=2ZY7ZzCjnTQj&format=png&color=000000'); /* Change to a new image */
+}
+.courses-two{
+display: flex ;
+justify-content: center; 
+}
+.cloud-Networking{
+  width: 350px; 
+    height: 400px; 
+    padding: 100px; 
+    border: 2px solid black; 
+    margin: 10px; 
+    /*background-color: lightblue; /* Background color */
+   border-radius: 25px;
+   border: 2px solid #0e0e0e;
+   background-color: #f9f9f9;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Light shadow */
+ 
+}
+.cloud-Networking h5{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+.cloud-Networking p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-align: justify;
+padding-bottom: 0;
+}
+.cloud-Networking img{
+  align-items: auto;
+  padding-left: auto;
+  height: 125px;
+  transition: opacity 0.3s ease; /*I will swap*/
+
+}
+.cloud-Networking:hover{
+  transform: scale(1.05); /* Slightly enlarge the box */
+    background-image: url("rdr2inhtml6.jpg");
+    border: 2px solid #ffcc00; /* Change to a soft yellow border */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Subtle larger shadow */
+    color: #ccc;
+}
+.cloud-Networking:hover img {
+  content: url('https://img.icons8.com/?size=100&id=55065&format=png&color=000000'); /* Change to a new image */
+
+}
+.mdi {
+  width: 350px; 
+  height: 400px; 
+  padding: 100px; 
+  border: 2px solid black; 
+  margin: 70px; 
+  /*background-color: lightblue; /* Background color */
+ border-radius: 25px;
+ border: 2px solid #0e0e0e;
+ background-color: #f9f9f9;
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Light shadow */
+
+}
+.mdi h5 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+.mdi p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-align: justify;
+padding-bottom: 0;
+}
+.mdi img {
+  align-items: auto;
+  padding-left: auto;
+  height: 125px;
+  transition: opacity 0.3s ease; /*I will swap*/
+
+}
+.mdi:hover{
+   transform: scale(1.05); /* Slightly enlarge the box */
+  background-image: url("fornew8.webp.jpg");
+  border: 2px solid #ffcc00; /* Change to a soft yellow border */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Subtle larger shadow */
+  color: #ccc;
+}
+.mdi:hover img {
+  content: url('https://img.icons8.com/?size=100&id=K11fTv3XGCMZ&format=png&color=000000'); /* Change to a new image */
+
+}
+.web{
+  width: 350px; 
+  height: 400px; 
+  padding: 100px; 
+  border: 2px solid black; 
+  margin: 10px; 
+  /*background-color: lightblue; /* Background color */
+ border-radius: 25px;
+ border: 2px solid #0e0e0e;
+ background-color: #f9f9f9;
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Light shadow */
+
+}
+.web h5{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+.web p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-align: justify;
+padding-bottom: 0;
+}
+.web img{
+  align-items: auto;
+  padding-left: auto;
+  height: 125px;
+  transition: opacity 0.3s ease; /*I will swap*/
+}
+.web:hover{
+  transform: scale(1.05); /* Slightly enlarge the box */
+  background-image: url("fornew9.jpeg.jpg");
+  border: 2px solid #ffcc00; /* Change to a soft yellow border */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Subtle larger shadow */
+  color: #ccc;
+}
+.web:hover img {
+  content: url('https://img.icons8.com/?size=100&id=XgVsZZvTh0tg&format=png&color=000000'); /* Change to a new image */
+
+}
+
+/*New section for progress - 7 parts*/
+
+.Progress{
+  text-decoration: solid;
+  font-size: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+
+/*progress and image-h4 and righttolef will never change */
+
+
+progress {
+  width: 100%;
+  height: 50px;
+  height: 30px; /*  for better visuals */
+  background-color: #e0e0e0; 
+
+  margin-bottom: 10px;
+}
+.image-h4{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.RightToLeft {
+  direction: rtl; /* Make the container's content flow from right to left */
+}
+
+
+.Cybersecurity-Tracker{
+  width: 1500px; 
+  /*height: 100px; /* Content height */
+  max-width: 2000px; 
+  height: 40px; 
+
+ padding: 20px; 
+  border: 2px solid black;  
+  margin: 20px; 
+ border-radius: 25px;
+ border: 2px solid #0e0e0e;
+ /*background-color: #f9f9f9;*/
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Light shadow */
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ flex-wrap: nowrap; /* Prevent wrapping of items */
+
+}
+
+.Cybersecurity-Tracker img {
+  width: 60px; 
+  height: 60px; 
+  margin-right: 15px; /* Space between the image and the heading */
+}
+
+
+.Cybersecurity-Tracker h4 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 22px;
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+ margin-bottom: 5px; /* Space between header and progress bar */
+  padding-bottom: 30px;
+  
+}
+.Cybersecurity-Tracker p{
+  font-size: 20px;
+  text-align: left;
+  font-weight: bold;
+  color: #555;
+  padding: 10px 20px;
+  margin: 0; /* Remove margin to avoid line breaks */
+  padding: 0 10px; /* Add space around text */
+}
+.Cybersecurity-Tracker:hover{
+  /*transform: scale(1.05); /* Slightly enlarge the box */
+  background-image: url("rdr2inhtml11.jpg");
+  border: 2px solid #ffcc00; /* Change to a soft yellow border */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Subtle larger shadow */
+  color:white
+}
+.Cybersecurity-Tracker:hover img{
+  content: url('https://img.icons8.com/?size=100&id=k5fgmiEf1sGl&format=png&color=000000'); /* Change to a new image */
+}
+.Cybersecurity-Tracker:hover h4{
+  color: aliceblue;
+}
+.Cybersecurity-Tracker:hover p{
+  color: aliceblue;
+}
+
+/*the second one will be in the right hand side*/ 
+
+
+.Networking-Tracker{
+  width: 1500px; 
+  /*height: 100px; /* Content height */
+  max-width: 2000px; 
+  height: 40px; 
+
+ padding: 20px; 
+  border: 2px solid black; 
+  margin: 20px; 
+ border-radius: 25px;
+ border: 2px solid #0e0e0e;
+ background-color: #f9f9f9;
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Light shadow */
+ float: right; /*the boxxxx in the righht*/
+
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ flex-wrap: nowrap; /* Prevent wrapping of items */
+}
+.Networking-Tracker img {
+  width: 60px; 
+  height: 60px; 
+  margin-right: 15px; 
+  padding-left: 20px;
+}
+
+.Networking-Tracker h4 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 22px;
+  text-align: right;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px; /* Space between header and progress bar */
+  padding-bottom: 30px;
+
+}
+.Networking-Tracker p{
+  font-size: 20px;
+  text-align: right;
+  font-weight: bold;
+  color: #555;
+  padding:  0 10px;
+}
+.Networking-Tracker:hover{
+ /* transform: scale(1.05); /* Slightly enlarge the box */
+  background-image: url("rdr2inhtml12.jpg");
+  border: 2px solid #ffcc00; /* Change to a soft yellow border */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Subtle larger shadow */
+  color:white;
+}
+.Networking-Tracker:hover img{
+  content: url('https://img.icons8.com/?size=100&id=xrkBrRT8ZvF7&format=png&color=000000'); /* Change to a new image */
+}
+.Networking-Tracker:hover h4{
+  color: aliceblue;
+}
+.Networking-Tracker:hover p{
+  color: aliceblue;
+}
+
+/*third one back to the left*/ 
+
+.Fifa-Tracker{
+  width: 1500px; 
+  /*height: 100px; /* Content height */
+  max-width: 2000px; 
+  height: 40px; 
+
+ padding: 20px; 
+  border: 2px solid black; 
+  margin: 20px; 
+ border-radius: 25px;
+ border: 2px solid #0e0e0e;
+ /*background-color: #f9f9f9;*/
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ flex-wrap: nowrap; 
+}
+.Fifa-Tracker img {
+  width: 60px; 
+  height: 60px; 
+  margin-right: 15px; 
+}
+.Fifa-Tracker h4 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 22px;
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+ margin-bottom: 5px; /* Space between header and progress bar */
+  padding-bottom: 30px;
+}
+.Fifa-Tracker p {
+  font-size: 20px;
+  text-align: left;
+  font-weight: bold;
+  color: #555;
+  padding: 10px 20px;
+  margin: 0; /* Remove margin to avoid line breaks */
+  padding: 0 10px; 
+}
+.Fifa-Tracker:hover{
+ /* transform: scale(1.05); /* Slightly enlarge the box */
+  background-image: url("rdr2inhtml13.jpg");
+  border: 2px solid #ffcc00; /* Change to a soft yellow border */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Subtle larger shadow */
+  color:white
+}
+.Fifa-Tracker:hover img {
+  content: url('https://img.icons8.com/?size=100&id=MlzA7D2DEUyF&format=png&color=000000'); /* Change to a new image */
+}
+.Fifa-Tracker:hover h4{
+  color: aliceblue;
+
+}
+.Fifa-Tracker:hover p {
+  color: aliceblue;
+}
+
+/*fourth one back to the right*/ 
+
+.ITskills-Tracker{
+  width: 1500px; 
+  /*height: 100px; /* Content height */
+  max-width: 2000px; 
+  height: 40px; 
+
+ padding: 20px; 
+  border: 2px solid black; 
+  margin: 20px; 
+ border-radius: 25px;
+ border: 2px solid #0e0e0e;
+ background-color: #f9f9f9;
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Light shadow */
+ float: right; /*the boxxxx in the righht*/
+
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ flex-wrap: nowrap; /* Prevent wrapping of items */
+}
+.ITskills-Tracker img{
+  width: 60px; 
+  height: 60px; 
+  margin-right: 15px; 
+  padding-left: 20px;
+}
+
+.ITskills-Tracker h4{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 22px;
+  text-align: right;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px; 
+  padding-bottom: 30px;
+  padding-left: 10px;
+}
+
+.ITskills-Tracker p {
+  font-size: 20px;
+  text-align: right;
+  font-weight: bold;
+  color: #555;
+  padding:  0 10px;
+}
+
+.ITskills-Tracker:hover{
+    /*transform: scale(1.05); /* Slightly enlarge the box */
+  background-image: url("rdr2inhtml14.jpg");
+  border: 2px solid #ffcc00; /* Change to a soft yellow border */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Subtle larger shadow */
+  color:white;}
+
+.ITskills-Tracker:hover img{  
+  content: url('https://img.icons8.com/?size=100&id=kps8JapxEo5u&format=png&color=000000'); /* Change to a new image */
+}
+.ITskills-Tracker:hover h4{
+  color: aliceblue;
+
+}
+.ITskills-Tracker:hover p{
+  color: aliceblue;
+
+}
+
+/*Fifth one from the left*/
+
+
+
+
+.SystemAnalysis-Tracker{
+  width: 1500px; 
+  /*height: 100px; /* Content height */
+  max-width: 2000px; 
+  height: 40px; 
+
+ padding: 20px; 
+  border: 2px solid black; 
+  margin: 20px; 
+ border-radius: 25px;
+ border: 2px solid #0e0e0e;
+ background-color: #f9f9f9;
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ flex-wrap: nowrap; 
+}
+.SystemAnalysis-Tracker img {
+  width: 60px; 
+  height: 60px; 
+  margin-right: 15px; 
+}
+.SystemAnalysis-Tracker h4 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 22px;
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+ margin-bottom: 5px; 
+  padding-bottom: 30px;
+}
+.SystemAnalysis-Tracker p {
+  font-size: 20px;
+  text-align: left;
+  font-weight: bold;
+  color: #555;
+  padding: 10px 20px;
+  margin: 0; 
+  padding: 0 10px; 
+}
+.SystemAnalysis-Tracker:hover{
+ /* transform: scale(1.05); /* Slightly enlarge the box */
+  background-image: url("rdr2inhtml13.jpg");
+  border: 2px solid #ffcc00; /* Change to a soft yellow border */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Subtle larger shadow */
+  color:white
+}
+.SystemAnalysis-Tracker:hover img {
+  content: url('https://img.icons8.com/?size=100&id=m9fCIngA1kKc&format=png&color=000000'); /* Change to a new image */
+}
+.SystemAnalysis-Tracker:hover h4{
+  color: aliceblue;
+
+}
+.SystemAnalysis-Tracker:hover p {
+  color: aliceblue;
+}
+
+
+
+
+/*sixth one from the right */ 
+
+.web-Tracker{
+  width: 1500px; 
+  /*height: 100px; /* Content height */
+  max-width: 2000px; 
+  height: 40px; 
+
+ padding: 20px; 
+  border: 2px solid black; 
+  margin: 20px; 
+ border-radius: 25px;
+ border: 2px solid #0e0e0e;
+ background-color: #f9f9f9;
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Light shadow */
+ float: right; /*the boxxxx in the righht*/
+
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ flex-wrap: nowrap; /* Prevent wrapping of items */
+}
+.web-Tracker img {
+  width: 60px; 
+  height: 60px; 
+  margin-right: 15px; 
+  padding-left: 20px;
+
+}
+.web-Tracker h4 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 22px;
+  text-align: right;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px; /* Space between header and progress bar */
+  padding-bottom: 30px;
+  padding-left: 10px;
+  
+}
+.web-Tracker p {
+  font-size: 20px;
+  text-align: right;
+  font-weight: bold;
+  color: #555;
+  padding:  0 10px;
+}
+.web-Tracker:hover{
+ /* transform: scale(1.05); /* Slightly enlarge the box */
+  background-image: url("rdr2inhtml13.jpg");
+  border: 2px solid #ffcc00; /* Change to a soft yellow border */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Subtle larger shadow */
+  color:white
+}
+.web-Tracker:hover img {
+  content: url('https://img.icons8.com/?size=100&id=63807&format=png&color=000000'); /* Change to a new image */
+}
+.web-Tracker:hover h4{
+  color: aliceblue;
+
+}
+.web-Tracker:hover p {
+  color: aliceblue;
+}
+
+/*seventh one */ 
+
+
+.MDI-Tracker{
+  width: 1500px; 
+  /*height: 100px; /* Content height */
+  max-width: 2000px; 
+  height: 40px; 
+
+ padding: 20px; 
+  border: 2px solid black; 
+  margin: 20px; 
+ border-radius: 25px;
+ border: 2px solid #0e0e0e;
+ background-color: #f9f9f9;
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ flex-wrap: nowrap; 
+}
+.MDI-Tracker img {
+  width: 60px; 
+  height: 60px;
+  margin-right: 15px; 
+}
+.MDI-Tracker h4 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 22px;
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+ margin-bottom: 5px; /* Space between header and progress bar */
+  padding-bottom: 30px;
+}
+.MDI-Tracker p {
+  font-size: 20px;
+  text-align: left;
+  font-weight: bold;
+  color: #555;
+  padding: 10px 20px;
+  margin: 0; /* Remove margin to avoid line breaks */
+  padding: 0 10px; /* Add space around text */
+}
+.MDI-Tracker:hover{
+ /* transform: scale(1.05); /* Slightly enlarge the box */
+  background-image: url("rdr2inhtml13.jpg");
+  border: 2px solid #ffcc00; /* Change to a soft yellow border */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Subtle larger shadow */
+  color:white
+}
+.MDI-Tracker:hover img {
+  content: url('https://img.icons8.com/?size=100&id=119249&format=png&color=000000'); /* Change to a new image */
+}
+.MDI-Tracker:hover h4{
+  color: aliceblue;
+
+}
+.MDI-Tracker:hover p {
+  color: aliceblue;
+}
+
+/*background for progress section */ 
+
+/*cancelled*/
+
+/*background for each section and header for each section */
+
+.Background-eachsection {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+
+
+.title-item {
+  position: relative;
+  margin: 20px 0;
+}
+
+.title-content {
+  padding: 15px;
+  /* background-color: #fff; */
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.title-content h3 {
+ /* font-size: 24px;*/
+ /* color: #333;*/
+ /*border-style*/
+ text-decoration: solid;
+ font-size: 60px;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ font-weight: bold;
+ text-align: center;
+}
+
+
+
+
+
+/*test*/
+/*new section for work */
+
+
+.experience {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.experience-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.experience-card {
+  width: 300px;
+  height: 250px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: scale(1.05);
+}
+
+.experience-card h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.experience-card p {
+  font-size: 18px;
+  color: #20d1ed;
+}
+
+.hover-details {
+  display: none; /*here to hide the element please focus before do it */
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+/* It tells the browser to display the .hover-details element when the .experience-card is being hovered over.*/
+.experience-card:hover .hover-details {
+  display: block;
+}
+
+
+
+/*new section for contact me */ 
+
+
+
+.main-content {
+  display: flex;
+  gap: 30px;
+}
+
+.container {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}
+
+.left-column {
+  flex: 1; /* Each item takes up equal space */
+  max-width: 600px;
+}
+
+.right-column img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+}
+.right-column:hover img{
+  transform: scale(1.05);
+
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+
+/* FOOOOOOOTTTTERRRRRR*/ 
+.footer {
+  background-color: #2c3e50; 
+  color: white;
+  padding: 40px 20px;
+  /* moves an element from its normal position, but it still takes up space in the layout and affects other elements around it.*/
+  position: relative;
+  /*positions an element at the bottom of its containing element, with no space between the element and the bottom edge of its container*/
+  bottom: 0;
+  width: 100%;
+
+  
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  padding: 10px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin: 0 15px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.1); 
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+/* css ends here  */
+
+
+
+
+
+  /* with js  */
+
+.title-item.submitted {
+  background-color: #888888; 
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+.title-item.submitted:hover {
+  background-color: #6b6b6b;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* final exam things - doesnt matter */
+
+.hero-yousif {
+  height: 100vh;
+  background: url('arthur2.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: 'Georgia', serif;
+}
+
+.overlay-yousif {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 60px;
+  text-align: center;
+  border-radius: 15px;
+  max-width: 800px;
+  color: white;
+}
+
+.tagline-yousif {
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.overlay-yousif h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.description-yousif {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.cta-yousif {
+  padding: 12px 24px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cta-yousif:hover {
+  background: #e6e6e6;
+}
+
+/* more to f e  */
+
+.hero-yousif.clicked {
+  background: url('arthur1.jpg') no-repeat center center/cover;
+  transition: background 0.6s ease;
+}
+
+.overlay-yousif.clicked {
+  background: rgba(255, 255, 255, 0.15); /* Light white transparent */
+  backdrop-filter: blur(2px);           /* Adds nice blur effect */
+  transition: background 0.4s ease;
+}
+
+/*
+.overlay-yousif.clicked {
+  background: rgba(255, 0, 0, 0.6); \
+   } */
+
+.overlay-yousif.clicked h1,
+.overlay-yousif.clicked .tagline-yousif,
+.overlay-yousif.clicked .description-yousif {
+  color: red;
+}
+
+/*the 80%*/
+
+  body{
+    zoom: 80%;
+  }
